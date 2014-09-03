@@ -1,0 +1,32 @@
+$(function(){
+
+	$('form').validate({
+		'webname':{
+		rule:{
+			required:true
+		},
+		error:{
+			required:"网站名称不能为空！"
+		}
+		},
+		'url':{
+		rule:{
+			required:true,
+			http:true
+		},
+		error:{
+			required:"网址不能为空！",
+			http:"必须为合法的url地址！"
+		}
+		},
+		'logo':{
+		rule:{
+			required:true
+		},
+		error:{
+			required:"logo不能为空！"
+		}
+		}
+	});
+
+})

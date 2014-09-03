@@ -1,0 +1,29 @@
+$(function(){
+	$("form").validate({
+	"old_password":{
+	rule:{
+		required:true
+	},
+	error:{
+		required:"密码不能为空！"
+	}
+	},
+	"password":{
+	rule:{
+		required:true
+	},
+	error:{
+		required:"密码不能为空！"
+	}
+	},
+	"password2":{
+	rule:{
+		required:true
+	},
+	error:{
+		required:"密码不能为空！"
+	}
+	}
+})
+
+})
