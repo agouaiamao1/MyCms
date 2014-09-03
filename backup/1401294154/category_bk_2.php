@@ -1,0 +1,11 @@
+<?php if(!defined('HDPHP_PATH'))EXIT;
+$db->exe("REPLACE INTO ".$db_prefix."category (`cid`,`cat_name`,`pid`,`cat_order`,`keywords`,`description`,`face_thumb`) VALUES('17','企业动态','0','0','','企业动态：极客万博作为中国最大的企业解决方案提供者，给你制定最优秀的服务！','')");
+$db->exe("REPLACE INTO ".$db_prefix."category (`cid`,`cat_name`,`pid`,`cat_order`,`keywords`,`description`,`face_thumb`) VALUES('18','新闻订','17','0','新闻','极客万博新闻动态。','./upload/face_thumb/94971389207853.jpg')");
+$db->exe("REPLACE INTO ".$db_prefix."category (`cid`,`cat_name`,`pid`,`cat_order`,`keywords`,`description`,`face_thumb`) VALUES('19','活动','17','0','活动','极客万博活动','./upload/face_thumb/80331389207812.jpg')");
+$db->exe("REPLACE INTO ".$db_prefix."category (`cid`,`cat_name`,`pid`,`cat_order`,`keywords`,`description`,`face_thumb`) VALUES('20','观点','17','0','观点','极客万博所持有的观点','./upload/face_thumb/49281389206676.jpg')");
+$db->exe("REPLACE INTO ".$db_prefix."category (`cid`,`cat_name`,`pid`,`cat_order`,`keywords`,`description`,`face_thumb`) VALUES('21','服务','0','0','服务','极客万博作为网站解决方案领导者，将倾其所能为你提供精致服务','')");
+$db->exe("REPLACE INTO ".$db_prefix."category (`cid`,`cat_name`,`pid`,`cat_order`,`keywords`,`description`,`face_thumb`) VALUES('23','能力','21','0','能力','我们的跨领域方法贯穿和支撑着每一个项目。','./upload/face_thumb/6021389171611.jpg')");
+$db->exe("REPLACE INTO ".$db_prefix."category (`cid`,`cat_name`,`pid`,`cat_order`,`keywords`,`description`,`face_thumb`) VALUES('24','专长','21','0','专长','我们对于行业趋势的观点丰富着客户的洞察。','./upload/face_thumb/51501389171716.jpg')");
+$db->exe("REPLACE INTO ".$db_prefix."category (`cid`,`cat_name`,`pid`,`cat_order`,`keywords`,`description`,`face_thumb`) VALUES('25','办公室','0','0','办公室','办公室','')");
+$db->exe("REPLACE INTO ".$db_prefix."category (`cid`,`cat_name`,`pid`,`cat_order`,`keywords`,`description`,`face_thumb`) VALUES('36','作品','0','0','作品','我们让梦想成真！','')");
+$db->exe("REPLACE INTO ".$db_prefix."category (`cid`,`cat_name`,`pid`,`cat_order`,`keywords`,`description`,`face_thumb`) VALUES('37','得等到','0','0','','','')");

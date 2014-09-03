@@ -1,0 +1,11 @@
+<?php if(!defined('HDPHP_PATH'))EXIT;
+$db->exe("REPLACE INTO ".$db_prefix."config (`id`,`title`,`name`,`show_type`,`value`,`conf`) VALUES('1','网站名称','webname','1','极客万博','')");
+$db->exe("REPLACE INTO ".$db_prefix."config (`id`,`title`,`name`,`show_type`,`value`,`conf`) VALUES('2','网站开关','webstat','2','1','1:开启,0:关闭')");
+$db->exe("REPLACE INTO ".$db_prefix."config (`id`,`title`,`name`,`show_type`,`value`,`conf`) VALUES('3','站长邮箱','email','1','geekwebcn@gmail.com','')");
+$db->exe("REPLACE INTO ".$db_prefix."config (`id`,`title`,`name`,`show_type`,`value`,`conf`) VALUES('4','QQ','qq','1','929272607','')");
+$db->exe("REPLACE INTO ".$db_prefix."config (`id`,`title`,`name`,`show_type`,`value`,`conf`) VALUES('5','微博','weibo','1','真-的爱-你','')");
+$db->exe("REPLACE INTO ".$db_prefix."config (`id`,`title`,`name`,`show_type`,`value`,`conf`) VALUES('7','是否加水印','WATER_ON','2','0','1:加水印,0:不加水印')");
+$db->exe("REPLACE INTO ".$db_prefix."config (`id`,`title`,`name`,`show_type`,`value`,`conf`) VALUES('8','电话','tel','1','18766031424','')");
+$db->exe("REPLACE INTO ".$db_prefix."config (`id`,`title`,`name`,`show_type`,`value`,`conf`) VALUES('9','服务热线','service_tel','1','18766031424','')");
+$db->exe("REPLACE INTO ".$db_prefix."config (`id`,`title`,`name`,`show_type`,`value`,`conf`) VALUES('10','地址','address','1','山东省 德州市 大学西路 566号','')");
+$db->exe("REPLACE INTO ".$db_prefix."config (`id`,`title`,`name`,`show_type`,`value`,`conf`) VALUES('11','网站模板','tpl_type','3','default','')");
