@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GW_CMS安装界面</title>
+<link rel="stylesheet" type="text/css" href="./template/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="./template/css/base.css"/>
+<script type="text/javascript" src='./template/js/bootstrap.js'></script>
+<script type="text/javascript" src='./template/js/jquery-1.8.2.min.js'></script>
+</head>
+
+<body>
+
+<div class='body'>
+<center><h2><font color='#E4393C'>函数及目录检测</font></h2></center>
+<hr>
+<table class='table table-bordered table-striped'>
+<caption>依赖函数加载检测</caption>
+  <thead>
+    <tr>
+      <th>函数名称</th>
+      <th>是否能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mysqli库</td>
+      <td><?php echo $mysqli;?></td>
+    </tr>
+    <tr>
+      <td>gd库加载</td>
+      <td><?php echo $gd;?></td>
+    </tr>
+    <?php foreach($func as $v):?>
+    <tr>
+      <td><?php echo $v;?></td>
+      <td>
+      <?php if(function_exists($v)){
+      echo "<strong><font color=green>成功</font></strong>";
+      }else{
+      echo "<strong><font class='error' color=red>失败</font></strong>";
+      }?></td>
+    </tr>
+    <?php endforeach; ?>
+  </tbody>
+</table>
+
+<table class='table table-bordered table-striped'>
+<caption>目录检测</caption>
+  <thead>
+    <tr>
+      <th>目录名称</th>
+      <th>可读</th>
+      <th>可写</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach($dirs as $d):?>
+    <tr>
+      <td><?php echo $d;?></td>
+      <td>
+      <?php if(is_readable($d)){
+      echo "<strong><font color=green>成功</font></strong>";
+      }else{
+      echo "<strong><font class='error' color=red>失败</font></strong>";
+      }?></td>
+      <td>
+      <?php if(is_writable($d)){
+      echo "<strong><font color=green>成功</font></strong>";
+      }else{
+      echo "<strong><font class='error' color=red>失败</font></strong>";
+      }?></td>
+    </tr>
+    <?php endforeach; ?>
+  </tbody>
+</table>
+<center><a class='btn btn-primary btn-large'  href="?step=1">上一步</a> <a href="javascript:;" id='next' class='btn btn-large btn-success' onclick='check();'>下一步</a></center>
+</div>
+<script type="text/javascript">
+function check(){
+	if($('.error').length){
+	alert("你的环境不能够安装GWCMS，请更改权限！");
+	}else{
+	location.href='?step=3';
+	}
+}
+</script>
+</body>
+</html>
