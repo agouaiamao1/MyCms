@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{$article.title}</title>
+	<meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+	<link rel="stylesheet" href="__TEMPLATE__css/comm.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/header.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/footer.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/menubar.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/article.css" />
+	<link rel="shortcut icon" type='image/x-icon' href="__TEMPLATE__img/favicon.ico" />
+</head>
+<body>
+	<!-- 头部 -->
+	<div class='header'>
+		<div class='header-inner'>
+			<load file="__TEMPLATE__header.html"/>
+
+			<!-- list-munubar-service -->
+
+			<div class='service-menubar'>
+		<ul>
+			<li><a href="{$article.url}" class='green-bg'>{$article.title}</a></li>
+		</ul>
+	</div>
+		</div>
+
+	</div>
+
+	<div class='article'>
+		<div  class='article-content'>
+			
+				<span><img src="{$article.thumb}" alt="" /></span>
+				<h1>{$article.title}</h1>
+				<h2>{$article.description}</h2>
+				<em>
+				<p>
+					{$article.content}
+				</p>
+			    </em>
+				
+			
+		</div>
+		<div class='photo-wall'>
+			<img src="__TEMPLATE__img/interaction_design_thumb_1.jpg" alt="" />
+			<img src="__TEMPLATE__img/interaction_design_thumb_2.jpg" alt="" />
+			<img src="__TEMPLATE__img/interaction_design_thumb_3.jpg" alt="" />
+			<img src="__TEMPLATE__img/interaction_design_thumb_4.jpg" alt="" />
+		</div>
+	</div>
+	
+	
+	
+
+
+
+
+	<!-- 底部 -->
+	<load file="__TEMPLATE__footer.html"/>
+		
+</body>
+</html>

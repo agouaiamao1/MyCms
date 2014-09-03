@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{$hd.config.webname}</title>
+	<meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+	<link rel="stylesheet" href="__TEMPLATE__css/comm.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/header.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/realplayer.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/column.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/footer.css" />
+	<link rel="shortcut icon" type='image/x-icon' href="__TEMPLATE__img/favicon.ico" />
+	<script src='__TEMPLATE__js/jquery.js'></script>
+	<script src='__TEMPLATE__js/realplayer.js'></script>
+</head>
+<body>
+	<div class='header'>
+		<div class='header-inner'>
+			<load file="__TEMPLATE__header.html"/>
+		</div>
+	</div>
+
+	<!--realplayer部分-->
+	<div class='real-outer'>
+		<div class='real-inner'>
+			<ul>
+				<li class='_first'>
+					<div><a href="{|U:'Index/index/content',array('id'=>45)}"><img src="__TEMPLATE__img/ge.jpg" alt="ge" /></a></div>
+					<p class='real-title'><a href="{|U:'Index/index/content',array('id'=>45)}">用户体验设计</a></p>
+					<p class='real-dec'>青蛙设计与GE共同加强以人为本的设计以及在各个业务领域，包括运输、能源、医疗中提供卓越的软件使用体验的策略。</p>
+				</li>
+				<li>
+					<div><a href="{|U:'Index/index/content',array('id'=>46)}"><img src="__TEMPLATE__img/promo.jpg" alt="ge" /></a></div>
+					<p class='real-title'><a href="{|U:'Index/index/content',array('id'=>46)}">重新定义安卓</a></p>
+					<p class='real-dec'>Feel UX在中国正式推出－青蛙设计和夏普双方联手，给消费者带来突破原有安卓机型的全新视觉互动新体验。</p>
+				</li>
+				<li>
+					<div><a href="{|U:'Index/index/content',array('id'=>47)}"><img src="__TEMPLATE__img/blink.jpg" alt="ge" /></a></div>
+					<p class='real-title'><a href="{|U:'Index/index/content',array('id'=>47)}">电动行驶</a></p>
+					<p class='real-dec'>青蛙设计与ECOtality搭档创作了一组为下一代电动服务的快速充电站，这项技术引领了智能EV充电器的新潮流，开启了一个节能环保、实用创新的新乐园。</p>
+				</li>
+				<li class='_first'>
+					<div><a href="{|U:'Index/index/content',array('id'=>45)}"><img src="__TEMPLATE__img/ge.jpg" alt="ge" /></a></div>
+					<p class='real-title'><a href="{|U:'Index/index/content',array('id'=>45)}">用户体验设计</a></p>
+					<p class='real-dec'>青蛙设计与GE共同加强以人为本的设计以及在各个业务领域，包括运输、能源、医疗中提供卓越的软件使用体验的策略。</p>
+				</li>
+				
+			</ul>
+			<a href="javascript:;" class='prev'></a>
+			    <a href="javascript:;" class='next'>Next</a>
+		</div>
+
+	<div class='column'>
+	<div class='global-news'>
+		<ul>
+			<top>
+			<li class='global-center'>
+				<a href="{$field.url}"><img src="{$field.thumb}" alt="" /></a>
+				<h3><a href="{$field.url}">{$field.title}</a></h3>
+				<p>{$field.description}</p>
+
+			</li>
+			</top>
+		</ul>			
+
+	</div>
+	<div class='news'>
+		<dl>
+			<dt>新闻</dt>
+			<news row='4'>
+			<dd>
+				<a href="{$field.url}">{$field.title}</a>
+				<p>{$field.description}</p>
+			</dd>
+			</news>
+		</dl>
+	</div>
+	<div class='exercise'>
+		<dl>
+			<dt>活动</dt>
+			<actives>
+			<dd><span><a href="{$field.url}"><img src="{$field.thumb}" alt="" /></a></span>
+				<a href="{$field.url}">{$field.title}</a>
+				<p>{$field.description}</p>
+			</dd>
+			</actives>
+		</dl>
+	</div>
+	<div class='viewpoint'>
+		<dl>
+			<dt>观点</dt>
+			<views>
+			<dd><span><a href="{$field.url}"><img src="{$field.thumb}" alt="" /></a></span>
+				<a href="{$field.url}">{$field.title}</a>
+				<p>{$field.description}</p>
+			</dd>
+			</views>
+			
+		</dl>
+	</div>
+	<div>
+		
+	</div>
+</div>
+</div>
+<!-- 以下为底部部分 -->
+<load file="__TEMPLATE__footer.html"/>
+
+
+</body>
+</html>

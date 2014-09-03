@@ -1,0 +1,55 @@
+$(
+function(){
+var ul=$('ul','.real-inner');
+
+var num=0;
+//定时器
+var t=setInterval(move,2000);
+//左侧滑动
+var next=$(".next");
+next.bind("click",function(){
+   clearInterval(t);
+   ul.stop();  //注意之前的动画让其静止！！！！！！
+   move();
+   t=setInterval(move,2000);
+
+ 
+});
+//向右滑动
+var prev=$(".prev");
+prev.bind("click",function(){
+clearInterval(t);
+ul.stop();
+if (num==1)
+{
+	ul.css("left",-2988);
+}
+right_move();
+t=setInterval(move,2000);
+});
+//move函数
+
+function move(){
+num++;
+if (num==4)
+{
+	ul.css("left",0);
+	num=1;
+}
+ul.animate({left:-996*num},400,"swing");
+
+}
+//right_move函数
+function right_move(){
+num++;
+if (num==4)
+{
+	ul.css("left",-2988);
+	num=1;
+}
+ul.animate({left:(-2988+996*num)},400,"swing");
+}
+
+
+}
+)

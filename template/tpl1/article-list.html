@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{$f.cat_name}</title>
+	<meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+	<link rel="stylesheet" href="__TEMPLATE__css/comm.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/header.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/footer.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/menubar.css" />
+	<link rel="stylesheet" href="__TEMPLATE__css/service-list.css" />
+	<link rel="shortcut icon" type='image/x-icon' href="__TEMPLATE__img/favicon.ico" />
+</head>
+<body>
+	<!-- 头部 -->
+	<div class='header'>
+		<div class='header-inner'>
+			<load file="__TEMPLATE__header.html"/>
+
+			<!-- list-munubar-service -->
+
+			<div class='service-menubar'>
+		<ul>
+			<list from="$pf" name='n'>
+			<li><a href="{|U:'Index/Index/category',array('cid'=>$n['cid'])}">{$n.cat_name}</a></li>
+			</list>
+			
+		</ul>
+	</div>
+		</div>
+
+	</div>
+	
+	
+	<div class='service-list service-list-son'>
+		<h1 >{$f.description}</h1>
+		<ul>
+			<arts>
+			<li>
+				<em><a href="{$field.url}"><img src="{$field.thumb}" alt="" /></a></em>
+				<h2><a href="{$field.url}">{$field.title}</a></h2>
+				<p>{$field.description}
+				</p>
+
+
+
+			</li>
+			</arts>
+			
+		</ul>
+	</div>
+
+
+
+
+
+	<!-- 底部 -->
+	<load file="__TEMPLATE__footer.html"/>
+</body>
+</html>

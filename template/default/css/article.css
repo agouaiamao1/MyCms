@@ -1,0 +1,76 @@
+.article{
+	margin:0px auto;overflow:hidden;width:996px;
+	padding-top:87px;_padding-top:0px;
+}
+.article-content{
+	width:744px;float:left;overflow:hidden;
+}
+.article-content span{
+ display:block;width:744px;height:420px;padding-bottom:15px;
+ overflow: hidden;
+}
+.article-content h1{
+	width:744px;font-size:58px;
+	color:#333333;line-height:67px;font-weight:normal;
+}
+.article-content h2{
+	width:744px;font-size:24px;
+	color:#55BD35;line-height:27px;font-weight:normal;padding-bottom:30px;
+}
+.article em{
+
+	display:block;width:744px;font-style:normal;float:left;margin-right:18px;
+}
+.article p{
+
+	display:block;width:744px;padding-bottom:18px;font-size:12px;
+color:#333;	
+}
+.photo-wall{
+	height:852px;width:222px;float:left;
+}
+.photo-wall img{
+	float:left;margin-bottom:12px;margin-left:12px;display:inline;
+}
+.products {
+	width:996px;height:auto;overflow:hidden;padding-top:18px;padding-bottom:30px;
+}
+.products b{
+	height:16px;padding-bottom:6px;width:996px;border-bottom:1px solid #333;
+	font-size:12px; display:block;
+}
+.products ul{
+	width:996px; float:left; height:120px;
+}
+
+.products ul li{
+	height:108px;width:240px; float:left;padding-top:12px;padding-right:12px;overflow:hidden;
+}
+.products .clear-right-padding{
+	padding-right:0px;
+}
+.products ul li a{
+	display:block; height:108px;width:240px;
+}
+.products ul li a img{
+	display:block; width:240px; height:90px;
+}
+.products ul li a span{
+	display:block; width:228px; height:15px;padding:3px 6px 0px;font-size:0.625em;
+	color:#fff;background:#000;
+}
+.products .viewpoints-under  li em{
+	display:block;width:114px;height:108px;float:left;margin-right:12px;
+}
+.products .viewpoints-under  li em a{
+	display:block;width:114px;height:108px;overflow:hidden;
+}
+.products .viewpoints-under li em a img{
+	width:162px;height:108px;margin-left: -16px;
+}
+.products .viewpoints-under li  a,.viewpoints-under ul li span{
+	color:#333333;font-size:13px;width:113px;float:left;display:block;height:auto;letter-spacing:0px;
+}
+.products .viewpoints-under  li  a:hover{
+	color:#37D7E1;
+}

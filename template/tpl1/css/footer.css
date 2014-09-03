@@ -1,0 +1,74 @@
+.footer{
+	float:left;overflow:hidden;height:410px;width:100%; border-top:3px solid black;background:#E6E6E6;padding-top:15px;
+    z-index:1000;position:relative;
+}
+
+.footer-inner{
+	height:399px;width:996px;margin:0px auto;overflow:hidden;
+}
+.footer-inner dl{
+	float:left;
+}
+.footer-inner dt{
+ font:0.8125em/15px "BentonSansMedium","Arial";color:#333;
+ border-bottom:1px solid #333;height:19px;margin-bottom:10px;
+font-weight:bold;
+}
+.foot-one {
+	width:240px;margin-right:10px; height:333px;
+}
+.foot-one dd a{
+	color:#333333;
+}
+.foot-one dd a:hover{
+	color:#37D7E1;
+}
+.foot-two dd {
+height:92px;width:74px;float:left;
+}
+.foot-two dd a{
+	display:block;height:92px;width:74px;
+}
+.foot-two dd a img{
+	height:92px;width:74px;display:block;
+}
+.side1{
+	margin:0px 9px 9px 0px;
+}
+.side2{
+	margin:0px 9px 0px 0px;
+}
+.side3{
+	margin:0px 0px 9px 0px;
+}
+.foot-three{
+	width:114px;float:left;
+}
+.foot-three dd a{
+text-decoration:underline;font-size:11px;color:#333;font-weight:bold;
+}
+.foot-three dd a:hover{
+	color:#37D7E1;text-decoration:none;
+}
+.foot-right{width:114px;float:left;_overflow:hidden;}
+.foot-four{
+	margin-top:25px;
+}
+.copyright{
+	width:996px;height:42px;float:left;margin-top:20px;_margin-top:10px;
+}
+.copyright p,span{
+	font-size:11px;color:#333;display:block;
+}
+.copyright p a,.copyright span a{
+	color:#333;
+}
+.copyright p a:hover,.copyright span a:hover{
+	color:#37D7E1;
+}
+.copyright span{
+	margin-top:15px;
+}
+.address{
+	margin-left:10px;
+}

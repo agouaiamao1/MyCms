@@ -1,0 +1,21 @@
+   body,img,ul,li,table,input,form,ol,dl,dd,dt,p,span,b,a,h3,h1,h2,h4,h5,h6{
+   	margin:0px;padding:0px;border:none;
+   }
+   body{
+   -webkit-text-size-adjust:none;
+   }
+   ul,li,dl,dd,ol{
+   	list-style:none;
+   }
+   a{
+   	text-decoration:none; font-family:'微软雅黑','Georgia','serif'
+   }
+   ::selection{
+   	background:#6BCA33;color:#fff;
+   }
+   ::-moz-selection{
+   	background:#6BCA33;color:#fff;
+   }
+   ::-webkit-selection{
+   	background:#6BCA33;color:#fff;
+   }
